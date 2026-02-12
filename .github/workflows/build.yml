@@ -15,11 +15,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt update
         sudo apt install -y python3-pip git zip unzip openjdk-17-jdk \
         autoconf libtool pkg-config zlib1g-dev \
-        libncurses5-dev libncursesw5-dev libtinfo5 cmake \
+        libncurses-dev cmake \
         libffi-dev libssl-dev
+
 
     - name: Install Buildozer
       run: |
